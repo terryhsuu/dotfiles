@@ -119,6 +119,8 @@ export PATH="$PATH:/Users/teisoku/.local/bin"
 eval "$(pyenv init -)"
 alias cl='clear'
 alias dc='dc'
+alias up='cd ..'
+alias gs='git status'
 
 mcd() {
     mkdir $1
