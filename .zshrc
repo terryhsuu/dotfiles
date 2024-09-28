@@ -115,7 +115,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Created by `pipx` on 2024-05-03 03:20:19
 alias cl='clear'
-alias dc='dc'
+alias dc='cd'
 alias up='cd ..'
 alias gs='git status'
 

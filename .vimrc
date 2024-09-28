@@ -21,7 +21,6 @@ set expandtab
 
 " Do not save backup files.
 set nobackup
-
 " Do not let cursor scroll below or above N number of lines when scrolling.
 set scrolloff=10
 
@@ -114,3 +113,7 @@ set mouse+=a
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+" Show the filename in the window titlebar
+set title
+
