@@ -114,8 +114,6 @@ source $ZSH/oh-my-zsh.sh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Created by `pipx` on 2024-05-03 03:20:19
-export PATH="$PATH:/Users/teisoku/.local/bin"
-eval "$(pyenv init -)"
 alias cl='clear'
 alias dc='dc'
 alias up='cd ..'
