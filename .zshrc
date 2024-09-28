@@ -117,7 +117,7 @@ source $ZSH/oh-my-zsh.sh
 export PATH="$PATH:/Users/teisoku/.local/bin"
 eval "$(pyenv init -)"
 alias cl='clear'
-alias dc='dc'
+alias dc='cd'
 alias up='cd ..'
 alias gs='git status'
 
