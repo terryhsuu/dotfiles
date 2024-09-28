@@ -1,0 +1,13 @@
+[user]
+	name = CasperXu
+	email = b09902025@csie.ntu.edu.tw
+
+[alias]
+    graph = log --all --graph --decorate --oneline
+  	# Amend the currently staged files to the latest commit.
+    amend = commit --amend 
+    # Show the user email for the current repository.
+	whoami = config user.email
+
+[core]
+	excludesfile = ~/.gitignore_global
