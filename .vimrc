@@ -127,6 +127,7 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'itchyny/calendar.vim'
+Plug 'ervandew/supertab'
 call plug#end()
 
 so ~/.vim/coc-config.vim

@@ -10,3 +10,6 @@
 [submodule ".vim/plugged/calendar.vim"]
 	path = .vim/plugged/calendar.vim
 	url = https://github.com/itchyny/calendar.vim
+[submodule ".vim/plugged/supertab"]
+	path = .vim/plugged/supertab
+	url = https://github.com/ervandew/supertab
