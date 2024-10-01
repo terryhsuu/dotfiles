@@ -122,6 +122,7 @@ call plug#begin('~/.vim/plugged')
 " coc-clangd coc-clang-format-style-options
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
+Plug 'itchyny/calendar.vim'
 call plug#end()
 
 so ~/.vim/coc-config.vim

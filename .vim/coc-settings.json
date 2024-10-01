@@ -15,7 +15,7 @@
         }
       }
     },
-    "clangd": {
+    "coc-clangd": {
       "command": "clangd",
       "args": ["--background-index", "--completion-style=detailed", "--header-insertion=never"],
       "filetypes": ["c", "cpp", "objc", "objcpp"],
