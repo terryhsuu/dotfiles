@@ -78,7 +78,6 @@ set relativenumber
 
 " Always show the status line at the bottom, even if you only have one window open.
 set laststatus=2
-
 " The backspace key has slightly unintuitive behavior by default. For example,
 " by default, you can't backspace before the insertion point set with 'i'.
 " This configuration makes backspace behave more reasonably, in that you can
@@ -115,17 +114,14 @@ let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
 " Show the filename in the window titlebar
-set title
+" set title
 
 call plug#begin('~/.vim/plugged')
 " Run :PlugInstall
 " And :CocInstall coc-pyright coc-rust-analyzer
 " coc-clangd coc-clang-format-style-options
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Plug 'prabirshrestha/vim-lsp'
-" Plug 'mattn/vim-lsp-settings'
-" Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'itchyny/lightline.vim'
 call plug#end()
 
 so ~/.vim/coc-config.vim
-" so ~/.vim/lsp.vim
