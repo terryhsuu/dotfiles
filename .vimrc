@@ -117,3 +117,15 @@ let g:ctrlp_cmd = 'CtrlP'
 " Show the filename in the window titlebar
 set title
 
+call plug#begin('~/.vim/plugged')
+" Run :PlugInstall
+" And :CocInstall coc-pyright coc-rust-analyzer
+" coc-clangd coc-clang-format-style-options
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Plug 'prabirshrestha/vim-lsp'
+" Plug 'mattn/vim-lsp-settings'
+" Plug 'prabirshrestha/asyncomplete.vim'
+call plug#end()
+
+so ~/.vim/coc-config.vim
+" so ~/.vim/lsp.vim
