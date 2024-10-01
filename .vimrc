@@ -78,6 +78,9 @@ set relativenumber
 
 " Always show the status line at the bottom, even if you only have one window open.
 set laststatus=2
+" -- INSERT -- is unnecessary because the mode information is displayed in the
+"  statusline
+set noshowmode
 " The backspace key has slightly unintuitive behavior by default. For example,
 " by default, you can't backspace before the insertion point set with 'i'.
 " This configuration makes backspace behave more reasonably, in that you can
@@ -122,6 +125,7 @@ call plug#begin('~/.vim/plugged')
 " coc-clangd coc-clang-format-style-options
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'itchyny/lightline.vim'
+Plug 'tpope/vim-fugitive'
 Plug 'itchyny/calendar.vim'
 call plug#end()
 

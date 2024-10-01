@@ -4,3 +4,9 @@
 [submodule ".vim/plugged/coc.nvim"]
 	path = .vim/plugged/coc.nvim
 	url = https://github.com/neoclide/coc.nvim
+[submodule ".vim/plugged/vim-fugitive"]
+	path = .vim/plugged/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
+[submodule ".vim/plugged/calendar.vim"]
+	path = .vim/plugged/calendar.vim
+	url = https://github.com/itchyny/calendar.vim
