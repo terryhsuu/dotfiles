@@ -88,7 +88,7 @@ set noshowmode
 set backspace=indent,eol,start
 
 " By default, Vim doesn't let you hide a buffer (i.e. have a buffer that isn't
-" shown in any window) that has unsaved changes. This is to prevent you from "
+" shown in any window) that has unsaved changes. This is to prevent you from
 " forgetting about unsaved changes and then quitting e.g. via `:qa!`. We find
 " hidden buffers helpful enough to disable this protection. See `:help hidden`
 " for more information on this.
