@@ -112,7 +112,7 @@ let mapleader=" "
 " Enable mouse support. You should avoid relying on this too much, but it can
 " sometimes be convenient.
 set mouse+=a
-
+inoremap {<CR> {<CR>}<Esc>ko
 " Show the filename in the window titlebar
 " set title
 
