@@ -45,7 +45,6 @@ set hlsearch
 " Set the commands to save in history default number is 20.
 set history=1000
 
-inoremap {<CR> {<CR>}<Esc>ko
 " Comments in Vimscript start with a `"`.
 
 " If you open this file in Vim, it'll be syntax highlighted for you.
