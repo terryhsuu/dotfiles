@@ -1,0 +1,32 @@
+{
+  "languageserver": {
+    "rust": {
+      "command": "rust-analyzer",
+      "filetypes": ["rust"],
+      "rootPatterns": ["Cargo.toml", "rust-project.json"],
+      "initializationOptions": {
+        "cargo": {
+          "loadOutDirsFromCheck": true,
+          "allFeatures": true,
+          "autoReload": false
+        },
+        "procMacro": {
+          "enable": true
+        }
+      }
+    },
+    "coc-clangd": {
+      "command": "clangd",
+      "args": ["--background-index", "--completion-style=detailed",
+          "--header-insertion=never", "--inlay-hints=false", "--clang-tidy"],
+      "filetypes": ["c", "cpp", "objc", "objcpp"],
+      "initializationOptions": {
+        "clangdFileStatus": true
+      }
+    }
+  },
+  "suggest.maxCompleteItemCount": 5,
+  "snippets.ultisnips.pythonPrompt": false,
+  "inlayHint.enable": false,
+  "snippets.ultisnips.pythonPrompt": false
+}

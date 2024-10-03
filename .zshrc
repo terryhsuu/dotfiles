@@ -118,6 +118,7 @@ alias cl='clear'
 alias dc='cd'
 alias up='cd ..'
 alias gs='git status'
+alias nv='nvim'
 
 mcd() {
     mkdir $1
