@@ -18,6 +18,7 @@
 			vim.api.nvim_set_keymap('n', '<leader>ft', ':Tags<CR>', { noremap = true, silent = true })
 			vim.api.nvim_set_keymap('n', '<leader>fa', ':Ag<CR>', { noremap = true, silent = true })
 			vim.api.nvim_set_keymap('n', '<leader>fc', ':Commits<CR>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>bf', ':Buffers<CR>', { noremap = true, silent = true })
             -- FZF actions
 			vim.g.fzf_action = {
 			  ['ctrl-t'] = 'tab split',

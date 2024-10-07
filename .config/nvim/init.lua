@@ -7,6 +7,8 @@ vim.g.mapleader = " "
 -- preferences
 --
 -------------------------------------------------------------------------------
+-- make tmux looks normal
+vim.opt.termguicolors = true
 -- never ever folding
 vim.opt.foldenable = false
 vim.opt.foldmethod = 'manual'
@@ -157,7 +159,7 @@ vim.keymap.set('n', '<leader>m', 'ct_')
 vim.keymap.set('', '<F1>', '<Esc>')
 vim.keymap.set('i', '<F1>', '<Esc>')
 -- auto include }
-vim.keymap.set('i', '{<cr>', '{<cr>}ko') 
+vim.keymap.set('i', '{<cr>', '{<cr>}<Esc>ko') 
 -------------------------------------------------------------------------------
 --
 -- autocommands
