@@ -122,8 +122,8 @@ vim.keymap.set('', 'L', '$')
 -- Neat X clipboard integration
 -- <leader>p will paste clipboard into buffer
 -- <leader>c will copy entire buffer into clipboard
-vim.keymap.set('n', '<leader>p', '<cmd>read !wl-paste<cr>')
-vim.keymap.set('n', '<leader>c', '<cmd>w !wl-copy<cr><cr>')
+vim.keymap.set('n', '<leader>p', ':let @"=@+<cr>p')
+vim.keymap.set('n', '<leader>c', ':let @+=@"<cr>')
 -- <leader><leader> toggles between buffers
 vim.keymap.set('n', '<leader><leader>', '<c-^>')
 -- <leader>, shows/hides hidden characters
