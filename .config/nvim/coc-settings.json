@@ -26,7 +26,6 @@
     }
   },
   "suggest.maxCompleteItemCount": 5,
-  "snippets.ultisnips.pythonPrompt": false,
   "inlayHint.enable": false,
   "snippets.ultisnips.pythonPrompt": false
 }
