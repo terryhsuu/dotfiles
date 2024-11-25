@@ -20,4 +20,10 @@ return {
 	-- call Base16hi("CocHintSign", g:base16_gui03, "", g:base16_cterm03, "", "", "")
 	end
 },
+{
+	'projekt0n/github-nvim-theme'
+},
+{
+	'AbdelrahmanDwedar/awesome-nvim-colorschemes'
+},
 }

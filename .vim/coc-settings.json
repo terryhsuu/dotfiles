@@ -22,7 +22,9 @@
       "filetypes": ["c", "cpp", "objc", "objcpp"],
       "initializationOptions": {
         "clangdFileStatus": true
-      }
+      },
+      "clangd.semanticHighlighting": true,
+      "clangd.arguments": ["--background-index"]
     }
   },
   "suggest.maxCompleteItemCount": 5,
