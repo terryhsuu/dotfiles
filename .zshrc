@@ -119,6 +119,7 @@ alias dc='cd'
 alias up='cd ..'
 alias gs='git status'
 alias nv='nvim'
+alias gtree='git ls-files | tree --fromfile'
 
 mcd() {
     mkdir $1
