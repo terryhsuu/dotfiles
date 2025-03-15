@@ -1,3 +1,13 @@
+--
+--
+-- <leader>e	Toggle Neo-tree
+-- <leader>b	Show open buffers in Neo-tree
+-- <CR>	Open file but keep focus in Neo-tree
+-- d	Delete selected file
+-- r	Rename selected file
+-- a	Create a new file or directory
+-- q	Close Neo-tree
+-- 
 return {
   {
   "nvim-neo-tree/neo-tree.nvim",
@@ -31,17 +41,9 @@ return {
           ["<C-f>"] = { "scroll_preview", config = {direction = -10} },
         },
       },
-      event_handlers = {
-        {
-          event = "file_opened",
-          handler = function() -- Prevent auto-closing and focus shift
-            require("neo-tree.command").execute({ action = "focus" })
-          end,
-        },
-      },
     })
     -- Toggle Neo-tree with <leader>e
-    vim.keymap.set("n", "<leader>e", ":Neotree toggle<CR>", { noremap = true, silent = true })
+    vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { noremap = true, silent = true })
   end,
 },
 }
