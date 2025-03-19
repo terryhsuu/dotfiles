@@ -7,7 +7,10 @@
 -- r	Rename selected file
 -- a	Create a new file or directory
 -- q	Close Neo-tree
--- 
+-- s	Open file in a vertical right split
+-- S	Open file in a vertical left split
+-- i	Open file in a horizontal split (below)
+-- t	Open file in a new tab
 return {
   {
   "nvim-neo-tree/neo-tree.nvim",
@@ -43,7 +46,7 @@ return {
       },
     })
     -- Toggle Neo-tree with <leader>e
-    vim.keymap.set("n", "<leader>e", "<cmd>Neotree toggle<CR>", { noremap = true, silent = true })
+    vim.keymap.set("n", "<C-n>", "<cmd>Neotree toggle<CR>", { noremap = true, silent = true })
   end,
 },
 }

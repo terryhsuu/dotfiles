@@ -7,18 +7,18 @@
   	  "junegunn/fzf.vim", -- Optional: Add fzf.vim for extra Neovim integration
   	  	config = function()
   	  		-- stop putting a giant window over my editor
-  	  		vim.g.fzf_layout = { down = '~30%' }
+  	  		vim.g.fzf_layout = { down = '~40%' }
 
 			-- FZF key mappings
 			vim.api.nvim_set_keymap('n', '<leader>fl', ':Lines<CR>', { noremap = true, silent = true })
-			vim.api.nvim_set_keymap('n', '<leader>fb', ':BLines<CR>', { noremap = true, silent = true })
+			-- vim.api.nvim_set_keymap('n', '<leader>fb', ':BLines<CR>', { noremap = true, silent = true })
 			vim.api.nvim_set_keymap('n', '<leader>ff', ':Files<CR>', { noremap = true, silent = true })
 			vim.api.nvim_set_keymap('n', '<leader>fg', ':GFiles<CR>', { noremap = true, silent = true })
 			vim.api.nvim_set_keymap('n', '<leader>f?', ':GFiles?<CR>', { noremap = true, silent = true })
 			vim.api.nvim_set_keymap('n', '<leader>ft', ':Tags<CR>', { noremap = true, silent = true })
 			vim.api.nvim_set_keymap('n', '<leader>fa', ':Ag<CR>', { noremap = true, silent = true })
 			vim.api.nvim_set_keymap('n', '<leader>fc', ':Commits<CR>', { noremap = true, silent = true })
-			vim.api.nvim_set_keymap('n', '<leader>bf', ':Buffers<CR>', { noremap = true, silent = true })
+			vim.api.nvim_set_keymap('n', '<leader>fb', ':Buffers<CR>', { noremap = true, silent = true })
             -- FZF actions
 			vim.g.fzf_action = {
 			  ['ctrl-t'] = 'tab split',
