@@ -17,9 +17,9 @@ return {
  						{ 'fileencoding', 'filetype' }
  					},
  				},
- 				-- component_function = {
- 					-- filename = 'LightlineFilename'
- 				-- },
+ 				component_function = {
+					filename = 'LightlineFilename'
+ 				},
  			}
  			function LightlineFilenameInLua(opts)
  				if vim.fn.expand('%:t') == '' then
