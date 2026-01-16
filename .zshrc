@@ -121,6 +121,9 @@ alias gs='git status'
 alias nv='nvim'
 alias gtree='git ls-files | tree --fromfile'
 alias gdiff='git diff HEAD'
+alias lc="colorls"
+alias ls="eza --icons"
+alias ll="eza -l --icons --git"
 
 mcd() {
     mkdir $1
