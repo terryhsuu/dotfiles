@@ -65,7 +65,7 @@
     "editor.stickyTabStops": true,
     "editor.suggest.snippetsPreventQuickSuggestions": false,
     "editor.tabSize": 4,
-    "editor.wordWrap": "off",
+    "editor.wordWrap": "on",
     "editor.wordWrapColumn": 10,
     "editor.wrappingIndent": "same",
     "editor.wrappingStrategy": "advanced",
@@ -112,4 +112,86 @@
     // "terminal.integrated.fontFamily": "monospace",
     "rust-analyzer.rustfmt.overrideCommand": null,
     "workbench.colorTheme": "Monokai Night",
+    "github.copilot.nextEditSuggestions.enabled": true,
+
+    "latex-workshop.view.pdf.viewer": "tab",
+    // ---------- LaTeX Workshop ----------
+
+    // 使用パッケージのコマンドや環境の補完を有効にする
+    "latex-workshop.intellisense.package.enabled": true,
+
+    // 生成ファイルを削除するときに対象とするファイル
+    // デフォルト値に "*.synctex.gz" を追加
+    "latex-workshop.latex.clean.fileTypes": [
+        "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+        "*.snm",
+        "*.nav",
+        "*.dvi",
+        "*.synctex.gz"
+    ],
+
+    // 生成ファイルを "out" ディレクトリに吐き出す
+    "latex-workshop.latex.outDir": "out",
+
+    // ビルドのレシピ
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "latexmk",
+            "tools": [
+                "latexmk"
+            ]
+        },
+    ],
+
+    // ビルドのレシピに使われるパーツ
+    "latex-workshop.latex.tools": [
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ]
+        },
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+            "-synctex=1",
+            "-interaction=nonstopmode",
+            "-file-line-error",
+            "-pdf",
+            "-outdir=%OUTDIR%",
+            "%DOC%"
+            ],
+        },
+    ],
+"latex-workshop.view.pdf.internal.synctex.keybinding": "double-click"
 }

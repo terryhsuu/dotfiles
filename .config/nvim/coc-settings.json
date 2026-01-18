@@ -23,6 +23,42 @@
       "initializationOptions": {
         "clangdFileStatus": true
       }
+    },
+  "java": {
+      "command": "jdtls",
+      "filetypes": ["java"],
+      "rootPatterns": ["pom.xml", "build.gradle", "settings.gradle", ".project"],
+      "settings": {
+        "java": {
+          "codeGeneration.hashCodeEquals.useInstanceof": true,
+          "codeGeneration.useBlocks": true,
+          "implementationsCodeLens.enabled": true,
+          "referencesCodeLens.enabled": true,
+          "format.settings.url": "/path/to/your/java-style.xml",
+          "format.enabled": true,
+          "configuration": {
+            "runtimes": [
+              {
+                "name": "JavaSE-1.8",
+                "path": "/path/to/jdk-8",
+                "default": true
+              },
+              {
+                "name": "JavaSE-11",
+                "path": "/path/to/jdk-11"
+              },
+              {
+                "name": "JavaSE-17",
+                "path": "/path/to/jdk-17"
+              },
+              {
+                "name": "JavaSE-21",
+                "path": "/path/to/jdk-21"
+              }
+            ]
+          }
+        }
+      }
     }
   },
   "suggest.maxCompleteItemCount": 5,
