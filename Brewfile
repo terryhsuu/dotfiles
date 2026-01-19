@@ -14,5 +14,3 @@ brew "tldr"
 brew "tmux"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Full TeX Live distribution with GUI applications
-cask "mactex"
