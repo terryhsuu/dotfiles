@@ -61,6 +61,37 @@
       }
     }
   },
+  "python": {
+    "analysis": {
+      "typeCheckingMode": "basic",
+      "autoImportCompletions": true,
+      "autoSearchPaths": true,
+      "diagnosticMode": "workspace",
+      "stubPath": "typings"
+    },
+    "formatting": {
+      "provider": "black",
+      "blackPath": "black",
+      "blackArgs": [
+        "--line-length",
+        "88"
+      ]
+    },
+    "linting": {
+      "enabled": true,
+      "pylintEnabled": true,
+      "flake8Enabled": false
+    },
+    "sortImports": {
+      "path": "isort"
+    }
+  },
+  "pyright": {
+    "inlayHints": {
+      "functionReturnTypes": false,
+      "variableTypes": false
+    }
+  },
   "suggest.maxCompleteItemCount": 5,
   "inlayHint.enable": false,
   "snippets.ultisnips.pythonPrompt": false

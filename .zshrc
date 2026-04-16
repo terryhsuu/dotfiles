@@ -142,7 +142,7 @@ export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/llvm/lib"
 export CPPFLAGS="-I/usr/local/opt/llvm/include"
-
+export TVM_HOME=/Users/terryhsu/Desktop/tvm
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
