@@ -142,7 +142,6 @@ export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="/Applications/Docker.app/Contents/Resources/bin:$PATH"
 export LDFLAGS="-L/usr/local/opt/llvm/lib"
 export CPPFLAGS="-I/usr/local/opt/llvm/include"
-export TVM_HOME=/Users/terryhsu/Desktop/tvm
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -158,5 +157,6 @@ else
 fi
 unset __conda_setup
 # <<< conda initialize <<<
-
-export PATH="/Library/TeX/texbin:$PATH"
+if [ -f ~/.zsh_local ]; then
+    source ~/.zsh_local
+fi
